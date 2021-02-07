@@ -17,7 +17,7 @@ val storageModule = module {
             .fallbackToDestructiveMigration().addCallback(object: RoomDatabase.Callback() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
-                db.execSQL("INSERT INTO Points VALUES(1,0,0)")
+                db.execSQL("INSERT INTO Points VALUES(1,42,0)")
                 db.execSQL("insert into Riddle values(0,'Svakog dana stotine nogu pregazi moja rebra, a ja i dalje stojim, jer ja sam ...','ZEBRA',0)")
                 db.execSQL("insert into Riddle values(1,'Velik sam kao kuća, a malenog se miša bojim. Nos mi je do poda, čak i kada stojim.','SLON',0)")
                 db.execSQL("INSERT INTO Riddle values(2,'Maleni sam, nisam velik, ni previše snažan, ali svoju kuću nosim i pravim se važan.','PUŽ',0)")

@@ -57,7 +57,7 @@ class LevelsFragment : Fragment(), LevelAdapter.OnItemClickListener {
             if (pair == null) return@Observer
 
             levelAdapter.setItems(pair.first, pair.second.questionId)
-            recyclerView.smoothScrollToPosition(pair.second.questionId)
+            recyclerView.smoothScrollToPosition(pair.second.questionId - pair.first[0].id)
             levelsViewModel.data.value = null
         })
         navController = Navigation.findNavController(view)

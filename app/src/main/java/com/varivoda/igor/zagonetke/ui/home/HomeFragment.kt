@@ -3,6 +3,7 @@ package com.varivoda.igor.zagonetke.ui.home
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.*
+import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.varivoda.igor.zagonetke.R
@@ -61,6 +62,12 @@ class HomeFragment : Fragment() {
         }
         return super.onOptionsItemSelected(item)
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        val animation = AnimationUtils.loadAnimation(context,R.anim.grow_animation)
+        welcomeText.startAnimation(animation)
     }
 
 }
