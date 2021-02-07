@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/riddleFragment"
+        android:name="com.varivoda.igor.zagonetke.ui.riddle.RiddleFragment"
+        android:label="RiddleFragment" >
+        <argument app:nullable="false"
+            android:name="questionId"
+            app:argType="integer"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/levelsFragment"
+        android:name="com.varivoda.igor.zagonetke.ui.levels.LevelsFragment"
+        android:label="LevelsFragment" >
+        <argument app:nullable="false"
+            android:name="difficulty"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_levelsFragment_to_riddleFragment"
+            app:destination="@id/riddleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.varivoda.igor.zagonetke.ui.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.varivoda.igor.zagonetke.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_levelsFragment"
+            app:destination="@id/levelsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>

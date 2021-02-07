@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Zagonetke</string>
+    <string name="continue_level">Nastavi</string>
+    <string name="correct">Točno!</string>
+    <string name="not_correct">Nije točno!</string>
+    <string name="try_again">Pokušaj ponovno!</string>
+    <string name="delete">Obriši</string>
+    <string name="potvrdi">Potvrdi</string>
+    <string name="end_game">Čestitamo, došli ste do samoga kraja što je veliki uspjeh! Iskreno se nadamo da ste uživali u igri. Ako vam se aplikacija svidjela ocijenite nas na Google Play trgovini, puno bi nam značilo!</string>
+    <string name="error_msg">Greška</string>
+    <string name="yes_resource">Da</string>
+    <string name="no_resource">Ne</string>
+    <string name="joker_question">Imate joker na raspolaganju. Dobit ćete točan odgovor i to će vam oduzeti 50 bodova.</string>
+    <string name="not_enough_points_for_joker">Nemate dovoljno bodova da bi ste iskoristili joker.</string>
+    <string name="reset_question_resource">Jeste li sigurni da želite resetirati svoj dosadašnji napredak?</string>
+    <string name="more">više</string>
+    <string name="joker">joker</string>
+    <string name="reset">Resetiraj napredak</string>
+    <string name="position_resource">Razina %1$s</string>
+    <string name="levels_title0">Razine - lagano</string>
+    <string name="levels_title1">Razine - srednje</string>
+    <string name="levels_title2">Razine - teško</string>
+    <string name="settings">Postavke</string>
+    <string name="general_settings">Opće postavke</string>
+    <string name="enable_vibrations">Koristi vibracije</string>
+    <string name="welcome_message">Dobrodošli u zagonetke - 2021</string>
+    <string name="home_page">Početna stranica</string>
+    <string name="choose_toast_theme">Izaberite temu obavijesti</string>
+    <string name="toast_theme_changed">Uspješno ste promijenili temu obavijesti</string>
+
+</resources>

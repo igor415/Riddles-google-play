@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/general_settings">
+        <SwitchPreference
+            android:title="@string/enable_vibrations"
+            android:key="vibrations"
+            android:summaryOn="omogućeno"
+            android:summaryOff="onemogućeno"
+            android:defaultValue="true"/>
+
+        <ListPreference android:key="toast design"
+            android:title="@string/choose_toast_theme"
+            app:allowDividerAbove="true"
+            android:entries="@array/toasts"
+            android:defaultValue="Default"
+            android:summary="%s"
+            android:entryValues="@array/toasts"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

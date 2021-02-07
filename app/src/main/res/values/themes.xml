@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Zagonetke" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/dark_blue</item>
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#332fa2</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ActionBar.Solid.Ribbit.TitleTextStyle"
+        parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#976325</item>
+    </style>
+
+    <style name="guideline_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="guideline_style.vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="popup_title">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="letter_style">
+        <item name="android:background">@drawable/letter</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/riddle_text</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="darkToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/white</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">@color/dark_color</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stRadius">5dp</item>
+    </style>
+
+    <style name="lightToast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/white</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">@color/light_color</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stRadius">3dp</item>
+    </style>
+</resources>
